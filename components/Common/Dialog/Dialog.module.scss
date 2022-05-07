@@ -1,0 +1,29 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #a051;
+  z-index: 3;
+
+  .dialog {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px 0 gray;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, 50%);
+    width: 300px;
+    z-index: 4;
+    padding: 16px 12px;
+
+    h2 {
+      margin: 0;
+    }
+  }
+}
