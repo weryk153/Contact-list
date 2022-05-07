@@ -22,7 +22,7 @@ const Dialog: FC<Props> = ({
   setIsSuccessful,
 }): JSX.Element => {
   const wrapperRef = useRef(null);
-  const handleCloseDialog = (e: Event) => {
+  const handleCloseDialog = (e: any) => {
     if (wrapperRef.current === e.target) {
       setIsSuccessful(false);
       onClose();
