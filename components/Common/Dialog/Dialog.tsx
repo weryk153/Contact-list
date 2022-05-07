@@ -22,7 +22,7 @@ const Dialog: FC<Props> = ({
   setIsSuccessful,
 }): JSX.Element => {
   const wrapperRef = useRef(null);
-  const maskCloseHandler = (e) => {
+  const handleCloseDialog = (e: Event) => {
     if (wrapperRef.current === e.target) {
       setIsSuccessful(false);
       onClose();
@@ -40,7 +40,7 @@ const Dialog: FC<Props> = ({
     <div
       ref={wrapperRef}
       className={style['wrapper']}
-      onClick={maskCloseHandler}
+      onClick={handleCloseDialog}
     >
       <div className={style['dialog']}>
         {isSuccessful ? (
