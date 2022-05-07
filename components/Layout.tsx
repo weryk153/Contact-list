@@ -10,7 +10,7 @@ type Props = {
 const Layout: FC<Props> = ({ children }): JSX.Element => (
   <div>
     <Head>
-      <title>Kuren</title>
+      <title>taroko</title>
       <meta charSet="utf-8" />
       <meta
         name="viewport"
