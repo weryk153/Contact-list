@@ -1,0 +1,4 @@
+code 1 is better. In code 2, With more fields, there are more handler functions with repetitive logic in memory, 
+which will cause performance problems if the number of fields is large. 
+
+SO We can use event delegation to reduce the memory consumption of binding event handler.
