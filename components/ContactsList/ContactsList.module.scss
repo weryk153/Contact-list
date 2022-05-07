@@ -1,22 +1,29 @@
 .section {
   margin: 0 auto;
+  position: relative;
 
   @media only screen and (max-width: 768px) {
     width: 80%;
   }
-}
-
-.contacts-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 24px;
-  grid-row-gap: 16px;
-
-  @media only screen and (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr);
-  }
 
   .title {
     text-align: center;
+  }
+
+  .sort {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .contacts-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 16px;
+  
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
