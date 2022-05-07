@@ -2,8 +2,8 @@ import React, { FC, useState } from 'react';
 import Image from 'next/image';
 import idx from 'idx';
 import { User } from '../../interfaces';
-import style from './ListItem.module.scss';
 import { PATCHContact } from '../../utils/apis';
+import style from './ListItem.module.scss';
 
 type Props = {
   item: User;

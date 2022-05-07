@@ -51,7 +51,7 @@ const ContactsList: FC = (): JSX.Element => {
     //       const newData = data.filter((item) => item.id !== id);
     //     }
     //   } catch (err) {
-    //     console.error(`[AnchorMenuM Error]: ${err}`);
+    //     console.error(`[handleDeleteContact Error]: ${err}`);
     //   }
     // };
 

@@ -97,7 +97,9 @@ const ContactAddBtn = (): JSX.Element => {
 
   return (
     <>
-      <div onClick={handleToggleDialog}>Add Contact</div>
+      <div className={style['btn']} onClick={handleToggleDialog}>
+        Add Contact
+      </div>
       {isOpen && (
         <Dialog
           onClose={handleToggleDialog}
