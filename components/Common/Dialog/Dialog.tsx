@@ -35,6 +35,19 @@ const Dialog: FC<Props> = ({
       onClose();
     }, 3000);
   }
+  let title = '';
+
+  switch (type) {
+    case 'add':
+      title = 'Add Contact';
+      break;
+    case 'delete':
+      title = 'Delete Contact';
+      break;
+    default:
+      title = '';
+      break;
+  }
 
   return (
     <div
@@ -47,7 +60,7 @@ const Dialog: FC<Props> = ({
           <h2>Success!</h2>
         ) : (
           <>
-            <h2>{titleList[type]}</h2>
+            <h2>{title}</h2>
             {children}
           </>
         )}
